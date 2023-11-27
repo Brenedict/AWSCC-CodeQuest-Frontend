@@ -2,7 +2,7 @@
 
 :root {
     --main-color: rgb(28, 139, 43);
-    --post-container-width: 63.5%;
+    --post-container-width: 62vw;
     
 }
 * {
@@ -15,7 +15,9 @@ a {
     text-decoration: none;
     color: black;
 }
-
+main {
+    display: flex;
+}
 body {
     overflow-x: hidden;
     background-color: #eee;
@@ -82,6 +84,7 @@ article {
 
 .post-1-text {
     padding: 30px;
+    overflow:auto;
 }
 
 .post-1 a {
@@ -155,4 +158,72 @@ article {
     font-size: 2vmin;
     line-height: 20px;
     margin: 20px 0px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-post-container {
+    width: 20vw;
+    margin: 36px 0;
+
+}
+
+.popular-post-title { 
+    font-size: 1.2rem;
+    color: rgb(151, 128, 128);
+}
+
+.popular-post {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.popular-post img {
+    width: 60px;
+    height: 60px;
+}
+
+.popular-post-text-container {
+    margin: 0 10px;
+}
+
+.popular-post-text-container a {
+    font-size: 2.1vmin;
+    font-weight: bold;
+}
+
+.popular-post-text-container p {
+    font-size: 0.9rem;
+    color: rgb(168, 147, 147);
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socials-title {
+    font-size: 1rem;
+    color: rgb(151, 128, 128);
+}
+
+.socials-links {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.socials-links img {
+    width: 42px;
+
 }
