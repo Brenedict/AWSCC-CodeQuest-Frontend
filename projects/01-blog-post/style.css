@@ -17,6 +17,7 @@ a {
 }
 main {
     display: flex;
+    margin: 20px 0;
 }
 body {
     overflow-x: hidden;
@@ -31,7 +32,7 @@ span {
 }
 
 nav {
-    padding: 10px 50px;
+    padding: 10px 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -225,5 +226,47 @@ aside {
 
 .socials-links img {
     width: 42px;
+}
 
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* padding: 25px 0px; */
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+
+.footerBoxes {
+    display: flex;
+    width: 85vw;
+    gap: 50px;
+    margin: 45px 0px;
+    /* background-color: rgb(42, 71, 71); */
+}
+
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerBox p {
+    font-size: 13.5px;
+    line-height: 25px;
+}
+
+.footerBox hr {
+    width: 30px;
+}
+
+.footer-hr {
+    width: 90vw;
+}
+
+.copyright {
+    margin: 20px 0;
 }
