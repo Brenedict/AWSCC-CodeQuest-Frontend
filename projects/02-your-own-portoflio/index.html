@@ -1,1 +1,77 @@
-<!-- GO WILD AND BE CREATIVE! -->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Portfolio</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Quicksand&display=swap" rel="stylesheet">
+    <!-- <link rel="website icon" type="jpg" href="assets/sisyphus.jpg"> -->
+</head>
+<body>
+    <!-- <header>
+        <div class="Logo">
+            <p>Portfolio</p>
+        </div>
+    </header> -->
+
+    <main>
+        <section class="banner">
+            <div class="post-container">
+                <div class="profile-details">
+                    <div profile-pic>
+                        <img src="assets/IMG_20220618_195044.jpg" alt="Benedict.img">
+                    </div>
+                    <div class="profile-name">
+                        <h1>Benedict_dev</h1>
+                        <p>@John Benedict Biñas</p>
+                    </div>
+                </div>
+                <div class="post-text">
+                    <p>Hello, I am a <span>Front-End Developer</span>, creating your wonderful websites is my passion and fuel.</p>
+                    <div class="under-text">
+                        <p id="time">time</p>
+                        <button type="button" id="CTA">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1701843274">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+        <section class="bento-box">
+            <div class="row-one">
+                <div>
+                    <h1>ABOUT ME</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam quas qui animi, similique blanditiis? Officiis, incidunt? Accusantium, porro quae quibusdam animi dolore alias enim ea. Iste ex aperiam sunt?</p>
+                    <br>
+                </div>
+                <div class="skills-box">
+                    <h1>SKILLS</h1>
+                    <div class="skills">
+                        <img src="assets/python.png" alt="python">
+                        <img src="assets/html-5-logo-png-transparent.png" alt="html">
+                        <img src="assets/css3.png" alt="css">
+                    </div>
+                </div>  
+            </div>
+            <div class="projects">
+                <h1>Projects</h1>
+            </div>
+        </section>
+    </main>
+    <script>
+        let time = document.getElementById("time");
+
+        setInterval(()=> {
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        }, 1000)
+    </script>
+</body>
+</html>
