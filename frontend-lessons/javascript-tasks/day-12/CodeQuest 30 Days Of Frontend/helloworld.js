@@ -16,3 +16,23 @@
 // 1. Create a JavaScript file (e.g., "helloworld.js") with a log statement.
 // 2. Link the external scripts to an HTML file.
 // 3. Open the browser console and observe the combined output.
+const button = document.querySelector("#bttn");
+const hexValue = document.querySelector(".hexValue");
+const body = document.querySelector("body");
+
+button.addEventListener("click", changeHex);
+
+let hexadecimals = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+
+function changeHex() {
+    let hex = "#";
+    for (let i = 1;i<=6;i++) {
+        let random = Math.floor(Math.random()*16);
+        hex += hexadecimals[random];
+    }
+    hexValue.textContent = hex;
+    body.style.backgroundColor = hex;
+
+    //Tracks all generated hexadecimal codes on the console
+    console.log(`Generated Hexadecimal: ${hex}`);
+}

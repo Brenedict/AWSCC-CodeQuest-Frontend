@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuest: 30 Days Of Frontend:External Script</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            height: 100vh;
+            background-color: #FFFFFF;
+        }
+        h1 {
+            font-size: calc(24px + 2.5vw);
+            letter-spacing: 8px;
+        }
+        #bttn {
+            color: #FFFFFF;
+            background-color: black;
+            border-radius: 40px;
+            border: none;
+            padding: 10px 30px;
+            letter-spacing: 5px;
+            font-size: 3vmin;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        #bttn:hover {
+            color: #FFFFFF;
+            background-color: #241f22;
+        }
+
+        #bttn:active {
+            color: #1b1b1b;
+            background-color: #867979;
+            letter-spacing: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hexadecimal: <span class="hexValue">#FFFFFF</span></h1>
+    <button type="button" id="bttn">Click Me</button>
+    
+    <!-- EXTERNAL SCRIPT -->
+    <script src="helloworld.js"></script>
+</body>
+</html>
