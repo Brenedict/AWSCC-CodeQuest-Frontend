@@ -55,13 +55,21 @@ let colors = ["Blue", "Gray", "Jade", "Purple", "Orange"];
 colors.unshift("Magenta");
 colors.shift();
 
-const sliced_colors = colors.slice();
+const sliced_colors = colors.slice(1, 3);
 console.log(sliced_colors); 
+
 
 // Task 5: Array Splicing
 
 // 15. Create an array named `characters` with at least six characters (strings).
 // 16. Use the `splice()` method to insert two new characters at index 2 of the `characters` array.
 // 17. Use the `splice()` method to remove three characters starting from index 4 of the `characters` array.
+
+let chars = ['M', 'i', 'r', 'o', 'n', 'N', 'a', 'K', 'i', 't', 'a'];
+
+chars.splice(2, 0, 's', 's');
+
+chars.splice(4, 3)
+console.log(chars.join(""));
 
 // These tasks will help you strengthen your understanding of working with arrays in JavaScript. Arrays are powerful tools for managing and manipulating collections of data. Good luck! 🚀
